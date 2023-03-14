@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kai & Skylar's Wedding</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon2.png" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div id="card-front" class="card">
+        <div class="card-content">
+          <img src="images/monogram.png" class="monogram" alt="monogram" />
+          <div class="names-title">Kai & Skylar</div>
+          <div class="details">
+            <div class="date">April 22, 2023</div>
+            <div class="location">
+              <div>Carondelet House</div>
+              <div>627 South Carondelet Street, Los Angeles, CA, 90057</div>
+            </div>
+            <div class="times">
+              <div>Champagne welcome at 5:00pm</div>
+              <div>Ceremony to begin at 5:30pm</div>
+            </div>
+            <div class="misc">
+              <div>Attire: Cocktail</div>
+              <div>Parking: 611 South Carondelet Street</div>
+            </div>
+            <div class="rsvp">Kindly RSVP by mail</div>
+          </div>
+        </div>
+      </div>
+      <div id="card-back" class="card hidden">
+        <div class="card-content">
+          <img src="images/bonus.png" class="bonus-image" alt="You found it!" />
+          <div class="bonus-card-title">
+            We can't wait to see you at our wedding!
+          </div>
+        </div>
+      </div>
+      <img src="images/doge.png" id="doge" alt="doge" />
+    </div>
+    <script>
+      const front = document.getElementById("card-front");
+      const back = document.getElementById("card-back");
+
+      document.getElementById("doge").addEventListener("click", function () {
+        front.classList.toggle("hidden");
+        back.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
